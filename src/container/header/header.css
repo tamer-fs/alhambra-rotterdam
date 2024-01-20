@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Oooh Baby");
+
+@font-face {
+  font-family: beautiful;
+  src: url("./OoohBaby-Regular.ttf");
+}
+
+.app__header {
+  min-height: calc(100vh - 40px);
+  background-color: #37546d;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.app__wrapper-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__header-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.app__header-info-h1 {
+  color: #d3a26b;
+  font-size: 90px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  max-width: 70%;
+}
+
+.app__header-info-p {
+  color: #83bdff;
+  font-size: 25px;
+  font-family: beautiful;
+  margin-bottom: 50px;
+}
+
+.app__header-info div {
+  width: 60px;
+  height: 2px;
+  background-color: #d3a26b;
+  margin: 25px 0;
+}
+
+.app__header-info-button {
+  margin-top: 15px;
+  width: 180px;
+  padding: 10px;
+  background-color: #d3a26b;
+  border: none;
+  color: white;
+  font-family: var(--cormorant);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .app__header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .app__header-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 50px;
+  }
+  .app__header-info-h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__header-info-h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .app__wrapper-img img {
+    width: 80%;
+  }
+}
