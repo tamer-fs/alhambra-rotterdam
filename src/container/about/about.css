@@ -1,16 +1,16 @@
 .app__about {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 4rem 6rem;
   background-color: #000000bd;
-  min-height: 100vh;
 }
 
 .app__about-h2 {
   color: #d3a26b;
   font-family: var(--cormorant);
   text-transform: capitalize;
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 
 .app__about-p {
@@ -29,7 +29,7 @@
 
 @media screen and (max-width: 1250px) {
   .app__about-h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .app__about-p {
     font-size: 1rem;

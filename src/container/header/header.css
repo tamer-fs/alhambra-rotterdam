@@ -12,7 +12,9 @@
   grid-template-columns: 1fr 1fr;
   padding: 1.5rem 0;
   opacity: 0.3;
-  transition: 3s cubic-bezier(0.24, 1.01, 0.2, 0.94);
+  transition: 1s cubic-bezier(0.24, 1.01, 0.2, 0.94);
+  gap: 40px;
+  padding-bottom: 70px;
 }
 
 .app__wrapper-img {
@@ -66,8 +68,7 @@
 
 .app__header-info-button:hover {
   border: 2px solid white;
-} 
-  
+}
 
 @media screen and (max-width: 1250px) {
   .app__header-info {

@@ -1,6 +1,7 @@
 import NavBar from "./components/navbar";
 import Header from "./container/header/header";
 import About from "./container/about/about";
+import Menu from "./container/menu/menu";
 import bg from "./assets/bg.jpg";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <Header />
       <About />
+      <Menu />
     </div>
   );
 }

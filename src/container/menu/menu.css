@@ -1,0 +1,84 @@
+.app__menu {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  padding: 4rem 0;
+  justify-content: center;
+}
+
+.app__menu-categories {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "breakfast lunch drinks mock"
+    "breakfast lunch drinks mock"
+    "breakfast lunch specials desserts"
+    "breakfast main specials desserts";
+  height: 70%;
+  grid-template-rows: 50% 50% 50% 150%;
+  width: calc(100% - 4rem);
+}
+
+#breakfast {
+  grid-area: breakfast;
+}
+
+#lunch {
+  grid-area: lunch;
+}
+
+#main-dish {
+  grid-area: main;
+}
+
+#specials {
+  grid-area: specials;
+}
+
+#dessert {
+  grid-area: desserts;
+}
+
+#drinks {
+  grid-area: drinks;
+}
+
+#mock {
+  grid-area: mock;
+}
+
+.app__menu-categories-item {
+  background-color: rgb(177, 177, 177);
+  padding: 8px;
+  cursor: pointer;
+}
+
+.app__menu-categories-item a {
+  color: #fff;
+  font-family: var(--open-sans);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.app__menu-categories-item a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1250px) {
+  .app__menu-categories {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "breakfast"
+      "lunch"
+      "main"
+      "specials"
+      "desserts"
+      "drinks"
+      "mock";
+    height: 70%;
+    grid-template-rows: 170px 170px 170px 170px 170px 170px 170px;
+    width: calc(100% - 4rem);
+  }
+}

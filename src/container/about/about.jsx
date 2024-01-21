@@ -2,6 +2,7 @@ import { React, useRef, useState } from "react";
 import "./about.css";
 import Seperator from "../../components/seperator";
 import { useIsVisible } from "../../components/isvisible";
+import knife from "../../assets/knife.png";
 
 function About() {
   const ref = useRef();
@@ -26,6 +27,9 @@ function About() {
           deze toch vaak lezen. Zelfs als men weet dat het om een faketekst
           gaat, lezen ze toch door.
         </p>
+      </div>
+      <div className="app__about-img">
+        <img src={knife} alt="knife-img" />
       </div>
       <div className="app__about-container">
         <h2 className="app__about-h2">Onze Geschiedenis</h2>
