@@ -16,10 +16,10 @@ function NavBar() {
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li className="p__opensans">
-          <a href="#">Over Ons</a>
+          <a href="#about">Over Ons</a>
         </li>
         <li className="p__opensans">
           <a href="#">Menu</a>
@@ -46,10 +46,10 @@ function NavBar() {
           >
             <ul className="app__navbar-smallscreen-links">
               <li className="p__opensans">
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li className="p__opensans">
-                <a href="#">Over Ons</a>
+                <a href="#about">Over Ons</a>
               </li>
               <li className="p__opensans">
                 <a href="#">Menu</a>
