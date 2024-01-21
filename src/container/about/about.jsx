@@ -1,11 +1,15 @@
-import React from "react";
+import { React, useRef, useState } from "react";
 import "./about.css";
 import Seperator from "../../components/seperator";
+import { useIsVisible } from "../../components/isvisible";
 
 function About() {
+  const ref = useRef();
+  const isVisible = useIsVisible(ref);
+
   return (
     <div className="app__about" id="about">
-      <div className="app__about-container">
+      <div ref={ref} className={"app__about-container"}>
         <h2 className="app__about-h2">Over ons</h2>
         <Seperator
           width={"100px"}
