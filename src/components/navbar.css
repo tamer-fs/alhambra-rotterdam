@@ -5,6 +5,10 @@
   align-items: center;
   padding: 1rem 2rem;
   height: 50px;
+  position: fixed;
+  width: calc(100vw - 4rem);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  z-index: 5;
 }
 
 .app__navbar-logo {

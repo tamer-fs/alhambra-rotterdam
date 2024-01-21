@@ -27,6 +27,10 @@
   align-items: center;
 }
 
+.app__about-img img {
+  height: 500px;
+}
+
 @media screen and (max-width: 1250px) {
   .app__about-h2 {
     font-size: 1.8rem;

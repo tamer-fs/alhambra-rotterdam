@@ -11,8 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1.5rem 0;
-  opacity: 0.3;
-  transition: 1s cubic-bezier(0.24, 1.01, 0.2, 0.94);
+  opacity: 1;
   gap: 40px;
   padding-bottom: 70px;
 }

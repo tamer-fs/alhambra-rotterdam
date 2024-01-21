@@ -1,9 +1,20 @@
 import React from "react";
 import "./menu.css";
+import Seperator from "../../components/seperator";
 
 function Menu() {
   return (
     <div className="app__menu">
+      <div className="app__menu-title">
+        <h2>Ons Menu</h2>
+        <Seperator
+          width={"100px"}
+          height={2}
+          color={"#d3a26b"}
+          margin={"7px 0px 14px 0px"}
+        />
+        <p>Onze uitgebreide en heerlijke smaakvolle gerechten</p>
+      </div>
       <div className="app__menu-categories">
         <div className="app__menu-categories-item" id="breakfast">
           <a href="#">Ontbijt</a>

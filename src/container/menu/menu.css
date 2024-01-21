@@ -1,10 +1,17 @@
+@font-face {
+  font-family: lux;
+  src: url("./OoohBaby-Regular.ttf");
+}
+
 .app__menu {
   width: 100%;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: #37546d;
   display: flex;
   padding: 4rem 0;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .app__menu-categories {
@@ -18,6 +25,26 @@
   height: 70%;
   grid-template-rows: 50% 50% 50% 150%;
   width: calc(100% - 4rem);
+}
+
+.app__menu-title {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app__menu-title h2 {
+  color: #d3a26b;
+  font-family: var(--cormorant);
+  font-size: 4.5rem;
+}
+
+.app__menu-title p {
+  color: white;
+  font-family: lux;
+  font-size: 1.8rem;
+  opacity: 0.8;
 }
 
 #breakfast {
@@ -49,13 +76,15 @@
 }
 
 .app__menu-categories-item {
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(255, 255, 255);
   padding: 8px;
   cursor: pointer;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 .app__menu-categories-item a {
-  color: #fff;
+  color: #000000;
   font-family: var(--open-sans);
   font-size: 20px;
   text-decoration: none;
@@ -80,5 +109,40 @@
     height: 70%;
     grid-template-rows: 170px 170px 170px 170px 170px 170px 170px;
     width: calc(100% - 4rem);
+  }
+  .app__menu-title h2 {
+    font-size: 3rem;
+  }
+
+  .app__menu-title p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__menu-categories {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "breakfast"
+      "lunch"
+      "main"
+      "specials"
+      "desserts"
+      "drinks"
+      "mock";
+    height: 70%;
+    grid-template-rows: 170px 170px 170px 170px 170px 170px 170px;
+    width: calc(100% - 2rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__menu-title h2 {
+    font-size: 2rem;
+  }
+
+  .app__menu-title p {
+    font-size: 1rem;
   }
 }
