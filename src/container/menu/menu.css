@@ -20,7 +20,7 @@
   grid-template-areas:
     "breakfast lunch drinks mock"
     "breakfast lunch drinks mock"
-    "breakfast lunch specials desserts"
+    "breakfast lunch specials mock"
     "breakfast main specials desserts";
   height: 70%;
   grid-template-rows: 50% 50% 50% 150%;
@@ -49,30 +49,58 @@
 
 #breakfast {
   grid-area: breakfast;
+  background-image: url("https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/322530677_884748935885734_4331471491765285421_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=PnyxgrdMuHAAX8fZBsl&_nc_ht=scontent-ams2-1.xx&oh=00_AfDb2GqKtelO7pjmH0KvnMWgihbMigytB7ym_seqchnTkA&oe=65B29B48");
+  background-size: auto 120%;
+  background-repeat: no-repeat;
+  background-position: 20% 80%;
 }
 
 #lunch {
   grid-area: lunch;
+  background-image: url("https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/322009289_3435171136751040_7707869334916453779_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=0IgxjqPhJgwAX8gXVl6&_nc_ht=scontent-ams4-1.xx&oh=00_AfBHch_Gh8hK0L8YXSAnpd2o1wnMKoiH_NQPKS_VLBzkzg&oe=65B362A9");
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
 }
 
 #main-dish {
   grid-area: main;
+  background-image: url("https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/368246524_275362185252832_6072737634725262906_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=3635dc&_nc_ohc=8l5ZP7qfPmcAX9Rp5H1&_nc_ht=scontent-ams2-1.xx&oh=00_AfAVOVT_vyzjBzOQ64V1R5hEG2Sil_GjZbUp9GigHQakAg&oe=65B33F21");
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-position: 20% 80%;
 }
 
 #specials {
   grid-area: specials;
+  background-image: url("https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/299603860_155021573856322_7923798831902282585_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=_wU8pEqALwcAX_L56aV&_nc_ht=scontent-ams4-1.xx&oh=00_AfBv-hPvbkq7Dz06Mqtmz0WX_EzOz1ODOQTC3o86Qm11Og&oe=65B29B3B");
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
 }
 
 #dessert {
   grid-area: desserts;
+  background-image: url("https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/292385182_144147711610375_8086680924588452340_n.jpg?stp=cp6_dst-jpg&_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=lhW5lbpQ_50AX-ZvGjU&_nc_ht=scontent-ams2-1.xx&oh=00_AfDeSd4WcJBTtoL_kCBVGaqHO2tt8L7SadtyRJVRpCvP0Q&oe=65B23AF0");
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
 }
 
 #drinks {
   grid-area: drinks;
+  background-image: url("https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/367450123_273264238795960_4326350490064198937_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=urPNsl3p9mkAX8lGJYg&_nc_ht=scontent-ams4-1.xx&oh=00_AfAS1lcIQRQvqV9WBpy0m4WgFwRpG40cFui50_BZieCMpQ&oe=65B259F1");
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
 }
 
 #mock {
   grid-area: mock;
+  background-image: url("https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/328709335_592617146019274_7976316108411941655_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=3635dc&_nc_ohc=vczQ5u2rKtoAX9ALhFE&_nc_ht=scontent-ams4-1.xx&oh=00_AfAgLNTtWV64pMjkZ3O-a8L3cf9gqFi0VPhjpk7D46uEAg&oe=65B363C4");
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  background-position: 20% 40%;
 }
 
 .app__menu-categories-item {
@@ -81,13 +109,19 @@
   cursor: pointer;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  display: flex;
+  align-items: start;
 }
 
 .app__menu-categories-item a {
   color: #000000;
-  font-family: var(--open-sans);
-  font-size: 20px;
+  font-family: var(--cormorant);
+  font-size: 17px;
   text-decoration: none;
+  padding: 5px;
+  background-color: #000000da;
+  transform: translate(-8px, -8px);
+  color: #d3a26b;
 }
 
 .app__menu-categories-item a:hover {
@@ -95,6 +129,16 @@
 }
 
 @media screen and (max-width: 1250px) {
+  .app__menu-title h2 {
+    font-size: 3rem;
+  }
+
+  .app__menu-title p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .app__menu-categories {
     display: grid;
     gap: 20px;
@@ -110,12 +154,13 @@
     grid-template-rows: 170px 170px 170px 170px 170px 170px 170px;
     width: calc(100% - 4rem);
   }
-  .app__menu-title h2 {
-    font-size: 3rem;
+  #breakfast {
+    background-size: 120% auto;
   }
-
-  .app__menu-title p {
-    font-size: 1.25rem;
+  #lunch,
+  #specials,
+  #dessert {
+    background-position: 20% 60%;
   }
 }
 

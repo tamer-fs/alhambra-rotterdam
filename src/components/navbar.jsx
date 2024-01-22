@@ -4,10 +4,16 @@ import "./navbar.css";
 import logo from "../assets/logo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faBurger, faHippo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faBurger,
+  faHippo,
+  faUtensils,
+} from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [menuPos, setMenuPos] = useState("-50vh");
 
   return (
     <div className="app__navbar">
@@ -22,7 +28,7 @@ function NavBar() {
           <a href="#about">Over Ons</a>
         </li>
         <li className="p__opensans">
-          <a href="#">Menu</a>
+          <a href="#menu">Menu</a>
         </li>
         <li className="p__opensans">
           <a href="#">Contact</a>
@@ -34,17 +40,22 @@ function NavBar() {
           fontSize={27}
           onClick={() => {
             setToggleMenu(true);
+            setMenuPos("0px");
           }}
         />
 
         {toggleMenu && (
           <div
             className="app__navbar-smallscreen_overlay"
-            onClick={() => {
-              setToggleMenu(false);
-            }}
+            style={{ top: menuPos }}
           >
-            <ul className="app__navbar-smallscreen-links">
+            <ul
+              className="app__navbar-smallscreen-links"
+              onClick={() => {
+                setToggleMenu(false);
+                setMenuPos("-50vh");
+              }}
+            >
               <li className="p__opensans">
                 <a href="#home">Home</a>
               </li>
@@ -52,12 +63,22 @@ function NavBar() {
                 <a href="#about">Over Ons</a>
               </li>
               <li className="p__opensans">
-                <a href="#">Menu</a>
+                <a href="#menu">Menu</a>
               </li>
               <li className="p__opensans">
                 <a href="#">Contact</a>
               </li>
             </ul>
+            <FontAwesomeIcon
+              icon={faUtensils}
+              fontSize={27}
+              onClick={() => {
+                setToggleMenu(false);
+                setMenuPos("-50vh");
+              }}
+              color={"#d3a26b"}
+              className="app__navbar-smallscreen-close"
+            />
           </div>
         )}
       </div>

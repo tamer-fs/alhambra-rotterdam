@@ -4,7 +4,7 @@ import Seperator from "../../components/seperator";
 
 function Menu() {
   return (
-    <div className="app__menu">
+    <div className="app__menu" id="menu">
       <div className="app__menu-title">
         <h2>Ons Menu</h2>
         <Seperator

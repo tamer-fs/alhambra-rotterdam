@@ -16,7 +16,7 @@ function Header() {
         <p className="app__header-info-p">Dit is een neppe korte quote</p>
         <h1 className="app__header-info-h1">Vul hier een korte tekst in</h1>
         <div></div>
-        <button className="app__header-info-button">Ontdek ons menu</button>
+        <button className="app__header-info-button">Reserveer Nu</button>
       </div>
       <div className="app__wrapper-img">
         <img src={main} alt="main-img" />

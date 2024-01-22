@@ -103,7 +103,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .app__header {
     grid-template-columns: 1fr;
