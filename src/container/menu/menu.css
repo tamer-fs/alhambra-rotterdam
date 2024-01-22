@@ -28,7 +28,7 @@
 }
 
 .app__menu-title {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,10 +107,10 @@
   background-color: rgb(255, 255, 255);
   padding: 8px;
   cursor: pointer;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   display: flex;
   align-items: start;
+  overflow: hidden;
+  border: 3px solid #d3a26b;
 }
 
 .app__menu-categories-item a {

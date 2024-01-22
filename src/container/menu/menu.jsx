@@ -32,7 +32,7 @@ function Menu() {
           <a href="#">Desserts</a>
         </div>
         <div className="app__menu-categories-item" id="drinks">
-          <a href="#">Drinks</a>
+          <a href="#">Dranken</a>
         </div>
         <div className="app__menu-categories-item" id="mock">
           <a href="#">Mocktails</a>
